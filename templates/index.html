@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='form-style.css')}}">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title> Member lookup tool </title>
+</head>
+<body>
+<form>
+<ul class="form-style-1">
+    <li><label>Full Name <span class="required">*</span></label><input type="text" name="first_name" class="field-divided" placeholder="First" />&nbsp;<input type="text" name="last_name" class="field-divided" placeholder="Last" /></li>
+    <li> and/or </li>
+    <li>
+        <label>Email <span class="required">*</span></label>
+        <input type="email" name="email" class="field-long" />
+    </li>
+    <li>
+        <input type="submit" value="Submit" />
+    </li>
+</ul>
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <title> Disambiguate email address </title>
+</head>
+<body>
+    <div>
+<font face = "Lucida Sans" size = "2">
+{% if emails and emails|length>0 %}
+    Which email? <br>
+    {% for email in emails %}
+        <a href = {{ url_for('index', email=email) }}>{{ email }}</a><br>
+    {% endfor %}
+{% endif %}
+{% block body %}{% endblock %}
+</font>
+</div>
+</body>
+</html>
+
